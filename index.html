@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Leadership by Design microsite for the MDes IxD program at California College of the Arts, Summer 2027, reflecting on hardware leadership through interview research by Jiwon Lee and Amanda Valverde."
+    />
+    <meta name="theme-color" content="#F0EEEA" />
+    <title>The Quiet Discipline of Hardware Leadership</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23131610'/%3E%3Cpath d='M18 24h28v16H18zM22 28h4M30 28h4M38 28h4M22 36h20' stroke='%23f0eeea' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E"
+    />
+    <script>
+      (() => {
+        document.documentElement.classList.add('js');
+        try {
+          const savedTheme = localStorage.getItem('hardware-leadership-theme');
+          document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+        } catch {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand-mark" href="#top" aria-label="Back to top">
+        <span>CCA</span>
+        <span>MDes IxD · Summer 2027</span>
+      </a>
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+      >
+        <span class="theme-label theme-label-light">Light</span>
+        <span class="theme-track" aria-hidden="true"><span></span></span>
+        <span class="theme-label theme-label-dark">Dark</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#sections">Sections</a>
+        <a href="#synthesis">Synthesis</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-inner reveal">
+          <p class="eyebrow hero-eyebrow">Leadership by Design · MDes IxD · California College of the Arts · Summer 2027</p>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1 id="hero-title">The Quiet Discipline of Hardware Leadership</h1>
+              <p class="hero-title-line">Interview and research by Jiwon Lee and Amanda Valverde</p>
+              <p class="hero-support">
+                A collaborative microsite reflection on how hardware leadership turns ambition into
+                buildable, trustworthy products through communication, feasibility, responsibility,
+                and human rituals that keep a team moving.
+              </p>
+              <div class="hero-actions" aria-label="Microsite shortcuts">
+                <a class="text-link" href="#sections">Open the sections <span aria-hidden="true">↓</span></a>
+                <a class="text-link" href="#synthesis">Read the synthesis <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <figure class="hero-visual" aria-label="Minimal hardware stack visual">
+              <img src="assets/hardware-leadership-hero.png" alt="Generic enterprise networking hardware arranged on an off-white grid surface." />
+              <figcaption>
+                <span>Hardware leadership</span>
+                <span>Ideas → suppliers → production → trust</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-section" id="overview" aria-labelledby="overview-title">
+        <div class="overview-inner">
+          <p class="eyebrow reveal">01 · Context</p>
+          <div class="section-heading reveal">
+            <h2 id="overview-title">Leadership as the work of making ideas survive reality.</h2>
+            <p>
+              For this interview, Jiwon Lee and Amanda Valverde spoke with Joshua Markell, who leads
+              hardware at Meter, the networking company where Jiwon has been interning for the past
+              four months.
+            </p>
+          </div>
+
+          <div class="context-grid reveal">
+            <article class="context-card">
+              <p class="detail-label">Interview setting</p>
+              <p>
+                Jiwon Lee and Amanda Valverde conducted the interview in person at the Meter office.
+                The conversation lasted about an hour, and Jiwon’s work inside the hardware team
+                gave the research a close observational lens on Joshua’s communication, feedback,
+                and decision-making.
+              </p>
+            </article>
+            <article class="context-card">
+              <p class="detail-label">Company context</p>
+              <p>
+                Meter builds enterprise-grade internet infrastructure through a full-stack approach
+                that combines hardware, software, and operations. In 2025, Meter publicly announced
+                nine new hardware platforms across access points, switches, firewalls, and gateways,
+                describing them as a cohesive system designed to perform better, last longer, and
+                integrate into Meter’s singular network stack.
+              </p>
+            </article>
+            <article class="context-card">
+              <p class="detail-label">Research vantage point</p>
+              <p>
+                Jiwon’s internship work has been more involved with early ideation, packaging,
+                graphics, and the visual side of product development, while Joshua manages the
+                larger hardware production process. As research partners, Jiwon and Amanda used
+                those observations alongside the interview to examine how his leadership shapes
+                product decisions and team culture.
+              </p>
+            </article>
+            <article class="context-card">
+              <p class="detail-label">First signal</p>
+              <p>
+                Jiwon remembered Joshua from her internship interview because he asked what she
+                thought about the Cybertruck. It felt casual, but it also tested how she observes
+                design, forms an opinion, and explains her reasoning.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sections-section" id="sections" aria-labelledby="sections-title">
+        <div class="sections-opener">
+          <p class="eyebrow reveal">02 · Collapsible interview sections</p>
+          <div class="section-heading reveal">
+            <h2 id="sections-title">Ten lessons from a hardware leader.</h2>
+            <p>
+              Each section can be read in two layers: the visible summary and insight first, then
+              the full reflection when opened.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-list">
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">01</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Execution</span><span>Suppliers</span><span>Responsibility</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-leading">
+              <span class="toggle-copy">
+                <span class="panel-kicker">Leading hardware in a fast-growing company</span>
+                <span class="panel-title">Leadership is not only vision. It is execution under constraint.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua’s answer to what keeps him up at night was grounded: supplier calls,
+                pricing negotiation, and the constant work of bringing an idea into real life.
+              </p>
+              <p class="insight"><span>Key insight</span>A design leader protects the concept while making sure it can survive production.</p>
+            </div>
+            <div class="panel-details" id="panel-leading">
+              <p>
+                That answer reminded us that hardware leadership is not only about vision or
+                aesthetics. A physical product has to pass through suppliers, manufacturing
+                partners, cost constraints, timelines, quality checks, and production realities.
+                Unlike digital design, hardware cannot always be revised instantly after launch.
+                Every decision has physical, financial, and operational consequences.
+              </p>
+              <p>
+                Meter’s new hardware stack makes that challenge even more complex. The company has
+                publicly described the redesign as thousands of deliberate choices, including port
+                placement, airflow, fan behavior, and power management. Joshua’s role is connected
+                to all of these layers. He is not just thinking about what a product should look
+                like. He is thinking about whether it can be built, how much it will cost, how it
+                will perform, how it will be deployed, and how it will represent Meter as a company.
+              </p>
+              <p>
+                This helped us understand the difference between being a designer and being a design
+                leader. A designer may focus deeply on the quality of a concept. A leader has to
+                protect the concept while also making sure it can survive reality.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">02</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Ambition</span><span>Feasibility</span><span>Translation</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-feasibility">
+              <span class="toggle-copy">
+                <span class="panel-kicker">Balancing ambition and feasibility</span>
+                <span class="panel-title">Leadership translates between different kinds of urgency.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua described persuasion, honesty, and transparent communication as the daily
+                work of balancing company ambition with hardware production realities.
+              </p>
+              <p class="insight"><span>Key insight</span>Constraints become useful when leaders communicate them without killing momentum.</p>
+            </div>
+            <div class="panel-details" id="panel-feasibility">
+              <p>
+                This answer stood out because it made leadership feel less like authority and more
+                like translation. A hardware leader has to translate between different types of
+                urgency. The company wants to move quickly. The CEO may see possibility and
+                momentum. Engineers and suppliers may see constraints, risk, and cost. A leader has
+                to communicate between those worlds without becoming negative or defensive.
+              </p>
+              <p>
+                Joshua also mentioned that being transparent can be hard when he does not always
+                have access to every piece of information. That showed us that leaders also operate
+                with incomplete knowledge. They are expected to make clear decisions, but they do
+                not always have perfect visibility. In that situation, communication becomes even
+                more important.
+              </p>
+              <p>
+                From Jiwon’s observations at work, Joshua communicates in a way that is fast,
+                precise, and direct, but still warm. When Jiwon feels lost, he gives direction by
+                explaining what he would have done, without forcing her to follow his exact answer or
+                making her feel pressured. He gives enough structure to help people move forward,
+                but enough openness for them to keep thinking.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">03</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Brand</span><span>Hardware identity</span><span>Coherence</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-meter">
+              <span class="toggle-copy">
+                <span class="panel-kicker">What makes a product feel like Meter</span>
+                <span class="panel-title">Brand identity in hardware is built through decisions over time.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua looks to Meter’s product line, color palette, and clean, minimal, friendly
+                feeling to judge whether hardware belongs to the system.
+              </p>
+              <p class="insight"><span>Key insight</span>A product can be minimal and still generic; coherence requires intention.</p>
+            </div>
+            <div class="panel-details" id="panel-meter">
+              <p>
+                Brand identity in hardware is not only a logo or surface treatment. It is a set of
+                decisions that build consistency over time. A product can be minimal but still cold.
+                It can be clean but still generic. For Meter, the goal seems to be creating hardware
+                that feels precise and reliable, but also approachable.
+              </p>
+              <p>
+                This is a real design challenge in the work Jiwon has observed. Networking hardware
+                already has a strong existing visual language because of large legacy companies like
+                Cisco. If a product becomes too generic, it risks disappearing into that category.
+                But if it becomes too expressive, it may lose the trust and seriousness needed for
+                enterprise infrastructure. Meter’s hardware has to feel like Meter: clean, minimal,
+                friendly, and intentional.
+              </p>
+              <p>
+                In a public MeterUp 2025 hardware presentation, Joshua introduced Meter’s new
+                enterprise networking hardware platforms, connecting the physical products to
+                Meter’s broader hardware philosophy. This matched what we heard in the interview. The
+                design challenge is not just to make individual objects look good. It is to make the
+                whole system feel coherent.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">04</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Feedback</span><span>Team culture</span><span>Big picture</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-feedback">
+              <span class="toggle-copy">
+                <span class="panel-kicker">Feedback as responsibility, not control</span>
+                <span class="panel-title">The leader is responsible for how the parts fit together.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua described the team as a strong group where everyone brings one block to the
+                work, while he tries to see the big picture and take responsibility.
+              </p>
+              <p class="insight"><span>Key insight</span>Useful feedback gives direction without treating one reaction as the final answer.</p>
+            </div>
+            <div class="panel-details" id="panel-feedback">
+              <p>
+                Instead of describing leadership as being the person with the best idea, Joshua
+                described it as being responsible for the bigger picture. That is different from
+                controlling every decision. It is more about understanding how each person’s
+                contribution fits together and making sure the work keeps moving in the right
+                direction.
+              </p>
+              <p>
+                This matches what Jiwon has experienced from him. His feedback is direct, but not
+                discouraging. When he gives feedback on new hardware concepts, he is clear about
+                what he likes and what does not feel aligned yet. At the same time, he stays open to
+                possibilities depending on manufacturability and feasibility. He helps the team
+                understand the direction and the tradeoffs.
+              </p>
+              <p>
+                For Jiwon as an intern, this kind of feedback is very helpful. She does not always
+                know the full hardware process, and there are many technical details that are still
+                new to her.
+                Joshua makes space for questions, even when they are basic. He explains things
+                patiently when she is confused, and he makes it clear that asking questions is okay.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">05</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Communication</span><span>Check-ins</span><span>Safety</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-communication">
+              <span class="toggle-copy">
+                <span class="panel-kicker">The leadership skill he relies on most</span>
+                <span class="panel-title">Clear communication is a design tool.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua said clear communication is the leadership skill he relies on most, especially
+                through quick regular check-ins rather than only formal meetings.
+              </p>
+              <p class="insight"><span>Key insight</span>With clear communication, a team can move through ambiguity together.</p>
+            </div>
+            <div class="panel-details" id="panel-communication">
+              <p>
+                He explained that communication does not always have to happen through formal
+                meetings. Quick regular check-ins help everyone understand what everyone else is
+                doing. He also tries to be clear about what is happening with CEO conversations and
+                how the company is growing, because the team wants the company to be successful.
+              </p>
+              <p>
+                This connected strongly to the weekly hardware team meetings he conducts. These
+                meetings help Jiwon understand what everyone is working on, what new production
+                updates are happening, and how different products are moving forward. Even when
+                her own tasks are not directly connected to every update, hearing the bigger picture
+                helps her understand the team’s rhythm.
+              </p>
+              <p>
+                Joshua can be serious, but he is also funny. That combination makes the environment
+                feel focused without feeling cold. He communicates directly, but his general tone is
+                warm. For Jiwon, this creates a sense of psychological safety. Before this
+                interview, we thought of design leadership mostly in terms of vision, taste, or
+                decision-making. After speaking with Joshua, we understood that communication may
+                be one of the most important leadership tools.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">06</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Young designers</span><span>Creativity</span><span>Constraints</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-young-designers">
+              <span class="toggle-copy">
+                <span class="panel-kicker">What young designers should understand about hardware</span>
+                <span class="panel-title">Feasibility should challenge ideas, not shrink them too soon.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua wants young designers to understand what is not feasible while still pushing
+                creatively and finding ways to make ideas work.
+              </p>
+              <p class="insight"><span>Key insight</span>Good hardware design lives between safe practicality and impossible imagination.</p>
+            </div>
+            <div class="panel-details" id="panel-young-designers">
+              <p>
+                This answer reframed feasibility for us. We used to think feasibility meant
+                reducing ideas or making them more practical. Joshua’s answer suggested that feasibility can
+                also be a creative challenge. The goal is not to ignore constraints, but also not to
+                let constraints kill the idea too early.
+              </p>
+              <p>
+                He connected this to a new product Meter is currently developing, which is exploring
+                a new direction in the design language. He wants this product to become a
+                representation of Meter. That means the team has to push the design forward while
+                still making it manufacturable and realistic.
+              </p>
+              <p>
+                This is one of the hardest parts of hardware design. If a designer only focuses on
+                what is possible today, the design may become safe and generic. If a designer ignores
+                feasibility completely, the concept may never become real. Strong hardware design
+                seems to live between those two extremes.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">07</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Production</span><span>Patience</span><span>Milestone</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-production">
+              <span class="toggle-copy">
+                <span class="panel-kicker">The excitement of mass production</span>
+                <span class="panel-title">In hardware, becoming real is an emotional milestone.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua said the mass production of the new series is exciting because the team has
+                worked long and hard to make it happen.
+              </p>
+              <p class="insight"><span>Key insight</span>The final object carries the memory of sketches, prototypes, testing, suppliers, and persistence.</p>
+            </div>
+            <div class="panel-details" id="panel-production">
+              <p>
+                That answer felt simple, but it captured something meaningful about hardware. In
+                hardware, the distance between idea and reality can be long. A product has to move
+                through sketches, CAD, prototypes, testing, engineering, suppliers, manufacturing,
+                and production. There are many chances for something to fail or change.
+              </p>
+              <p>
+                Because of that, reaching mass production is not just a business milestone. It is an
+                emotional milestone for the team. It also made us think about patience. In school,
+                design projects often move quickly from concept to presentation. But in a real
+                hardware company, launching a product means dealing with many layers of reality.
+              </p>
+              <p>
+                The excitement comes not only from the final object, but from knowing how much work
+                it took to make it real.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">08</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Rituals</span><span>Humanity</span><span>Trust</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-rituals">
+              <span class="toggle-copy">
+                <span class="panel-kicker">The small rituals of being human</span>
+                <span class="panel-title">Leadership also happens in tiny moments of recognition.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Joshua says good morning and goodbye to people by name. Over time, that small habit
+                made the workplace feel more personal.
+              </p>
+              <p class="insight"><span>Key insight</span>People trust leaders partly because leaders become legible as people.</p>
+            </div>
+            <div class="panel-details" id="panel-rituals">
+              <p>
+                At first, Jiwon thought this habit was kind of funny or unusual, but over time she
+                realized it makes the workplace feel more personal. It shows that he notices people.
+              </p>
+              <p>
+                That detail changed how we thought about leadership. Leadership is not only shown in
+                big decisions, presentations, or strategy meetings. It also shows up in tiny rituals
+                that make people feel seen. Saying someone’s name is simple, but it changes the tone
+                of the workspace. It makes the office feel less transactional and more human.
+              </p>
+              <p>
+                There are also small funny details that make him approachable. He does not seem to
+                like chocolate or desserts, and when he receives sweets as gifts, he will directly
+                say thank you but explain that he does not eat them and will share them with the
+                team. At the same time, people on the team know that he likes beer and gummy bears.
+                These details helped us understand that leadership is also relational.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">09</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Personal reflection</span><span>Growth</span><span>Systems</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-reflection">
+              <span class="toggle-copy">
+                <span class="panel-kicker">Reflection</span>
+                <span class="panel-title">The design leaders we want to become are both opinionated and system-aware.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                The interview helped us admire directness without intimidation, strong opinions
+                without rigidity, and fast problem-solving that still leaves room for listening.
+              </p>
+              <p class="insight"><span>Key insight</span>Hardware leadership is responsibility to product, team, company, suppliers, budget, and customer at once.</p>
+            </div>
+            <div class="panel-details" id="panel-reflection">
+              <p>
+                We admire Joshua’s ability to be direct without being intimidating. He gives feedback
+                clearly, but he does not make people feel small. He solves problems quickly, but he
+                still listens. He has strong opinions, but he also stays open to feasibility,
+                collaboration, and the contributions of the team.
+              </p>
+              <p>
+                The biggest lesson we took from him is that hardware leadership is a practice of
+                responsibility. It requires responsibility to the product, the team, the company, the
+                suppliers, the budget, and the customer. A leader has to care about the vision, but
+                also about the path that makes the vision real.
+              </p>
+              <p>
+                As young designers, we want to become more confident in our design opinions, but
+                also more aware of the systems around them. We want to understand manufacturing,
+                engineering, cost, deployment, and business constraints without letting those
+                constraints make our ideas smaller too soon. We also want to learn how to communicate
+                more clearly, especially with people from different disciplines.
+              </p>
+            </div>
+          </article>
+
+          <article class="leadership-panel reveal">
+            <div class="panel-top">
+              <p class="panel-number">10</p>
+              <div class="panel-tags" aria-label="Section themes">
+                <span>Closing idea</span><span>Trust</span><span>Real world</span>
+              </div>
+            </div>
+            <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="panel-closing">
+              <span class="toggle-copy">
+                <span class="panel-kicker">Closing synthesis</span>
+                <span class="panel-title">Creative leadership does not always look dramatic.</span>
+              </span>
+              <span class="toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="panel-preview">
+              <p>
+                Sometimes leadership looks like a quick check-in, a direct piece of feedback, a
+                supplier call, a pricing conversation, a team meeting, or a simple good morning.
+              </p>
+              <p class="insight"><span>Key insight</span>The quiet discipline is bringing ideas into the real world without losing meaning.</p>
+            </div>
+            <div class="panel-details" id="panel-closing">
+              <p>
+                Working with Joshua has shown us that creative leadership does not always look
+                dramatic. Sometimes it looks like a quick check-in, a direct piece of feedback, a
+                supplier call, a realistic conversation about pricing, a weekly team meeting, or a
+                simple good morning with someone’s name.
+              </p>
+              <p>
+                Overall, interviewing Joshua helped us see hardware design leadership as the quiet
+                discipline of bringing ideas into the real world. It is not only about making
+                something beautiful. It is about making something possible, trustworthy, and
+                meaningful enough to survive production.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="synthesis-section" id="synthesis" aria-labelledby="synthesis-title">
+        <div class="synthesis-inner reveal">
+          <p class="eyebrow">03 · Design leadership synthesis</p>
+          <h2 id="synthesis-title">Hardware leadership is a discipline of translation.</h2>
+          <div class="synthesis-grid">
+            <article>
+              <p class="detail-label">Vision → Buildability</p>
+              <p>
+                Strong concepts need leaders who can carry them through supplier realities,
+                production costs, quality checks, and operational consequences.
+              </p>
+            </article>
+            <article>
+              <p class="detail-label">Taste → Coherence</p>
+              <p>
+                Hardware identity is made through repeated decisions: color, form, friendliness,
+                restraint, reliability, and the confidence to avoid generic category language.
+              </p>
+            </article>
+            <article>
+              <p class="detail-label">Authority → Responsibility</p>
+              <p>
+                The leader does not have to contribute more than everyone else. The leader helps
+                everyone’s contribution fit together and takes responsibility when something happens.
+              </p>
+            </article>
+            <article>
+              <p class="detail-label">Communication → Psychological safety</p>
+              <p>
+                Fast, clear, warm communication gives people enough structure to move forward and
+                enough openness to keep thinking.
+              </p>
+            </article>
+          </div>
+          <blockquote>
+            <span>Final takeaway</span>
+            Hardware design leadership is not only about making something beautiful. It is about
+            making something possible, trustworthy, and meaningful enough to survive production.
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Leadership by Design · Jiwon Lee + Amanda Valverde · MDes IxD · California College of the Arts · Summer 2027</p>
+      <a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
