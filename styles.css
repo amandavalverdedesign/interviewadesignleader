@@ -419,19 +419,18 @@ button {
   border: 2px solid var(--ink);
   background: var(--wash);
   box-shadow: 0.65rem 0.65rem 0 var(--ink);
-  filter: grayscale(1) saturate(0) contrast(1.06);
-  transition: filter 180ms ease, transform 180ms ease;
+  filter: none;
+  transition: transform 180ms ease;
 }
 
 .hero-visual:hover {
-  filter: grayscale(0) saturate(1) contrast(1);
   transform: translate(-2px, -2px);
 }
 
 .hero-visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 5 / 4;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
@@ -520,6 +519,7 @@ button {
 }
 
 .sections-section {
+  border-bottom: 2px solid var(--ink);
   background:
     linear-gradient(rgba(var(--ink-rgb), 0.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(var(--ink-rgb), 0.045) 1px, transparent 1px),
